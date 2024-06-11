@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConfigEmail</class>
+ <widget class="QWidget" name="ConfigEmail">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#title
+{
+font: 24pt &quot;楷体&quot;;
+font-weight:bold;
+background-color: rgba(202, 221, 245,0.5);
+background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                stop:1 rgb(226,238,243),
+                                stop:0 rgb(240,207,214));
+border-radius:20px;
+}
+#ConfigEmail
+{
+background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                stop:0 rgb(226,238,243),
+                                stop:1 rgb(240,207,214));
+}
+#emailLab
+{
+font: 18pt &quot;方正粗黑宋简体&quot;;
+color: rgb(3, 57, 103);
+}
+#secretKeyLab
+{
+font: 18pt &quot;方正粗黑宋简体&quot;;
+color: rgb(3, 57, 103);
+}
+QLineEdit
+{
+font: 14pt &quot;楷体&quot;;
+font-weight:bold;
+background-color: rgba(136, 193, 150,0.3);
+border-radius:10px;
+border:2px solid gray;
+}
+QLineEdit:hover
+{
+font: 14pt &quot;楷体&quot;;
+font-weight:bold;
+border:2px solid ;
+}
+#btnCompleteConfiguration
+{
+font: 20pt &quot;楷体&quot;;
+font-weight:bold;
+border-radius:10px;
+border:2px solid gray;
+background-color: rgba(202, 221, 245,0.7);
+}
+#btnCompleteConfiguration:hover
+{
+font: 22pt &quot;楷体&quot;;
+font-weight:bold;
+border:3px solid;
+background-color: rgb(202, 221, 245);
+}
+#btnReturnMainPage
+{
+font: 20pt &quot;楷体&quot;;
+font-weight:bold;
+border-radius:10px;
+border:2px solid gray;
+background-color: rgba(202, 221, 245,0.7);
+}
+#btnReturnMainPage:hover
+{
+font: 22pt &quot;楷体&quot;;
+font-weight:bold;
+border:3px solid;
+background-color: rgb(202, 221, 245);
+}</string>
+  </property>
+  <widget class="QLineEdit" name="emailLine">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>270</y>
+     <width>490</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="title">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>50</y>
+     <width>500</width>
+     <height>120</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>500</width>
+     <height>120</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>500</width>
+     <height>120</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>配置邮箱</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="emailLab">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>210</y>
+     <width>250</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>250</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>250</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Email</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="secretKeyLine">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>410</y>
+     <width>490</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Normal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="secretKeyLab">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>350</y>
+     <width>250</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>250</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>250</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>SecretKey</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnReturnMainPage">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>540</y>
+     <width>250</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回主页</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCompleteConfiguration">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>540</y>
+     <width>250</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>完成配置</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
